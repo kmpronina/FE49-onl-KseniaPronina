@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/kmpronina/fe49-onl-KseniaPronina#readme",
   "dependencies": {
+    "jquery": "^3.6.4"
+  },
+  "devDependencies": {
     "concat": "^1.0.3",
-    "jquery": "^3.6.4",
     "sass": "^1.62.0",
     "server": "^1.0.38"
   }
