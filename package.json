@@ -1,0 +1,25 @@
+{
+  "name": "fe49-onl-kseniapronina",
+  "version": "1.0.0",
+  "description": "Secind project for TMS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmpronina/fe49-onl-KseniaPronina.git"
+  },
+  "author": "Ksenia Pronina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmpronina/fe49-onl-KseniaPronina/issues"
+  },
+  "homepage": "https://github.com/kmpronina/fe49-onl-KseniaPronina#readme",
+  "dependencies": {
+    "concat": "^1.0.3",
+    "jquery": "^3.6.4",
+    "sass": "^1.62.0",
+    "server": "^1.0.38"
+  }
+}
