@@ -2,9 +2,12 @@
   "name": "fe49-onl-kseniapronina",
   "version": "1.0.0",
   "description": "Secind project for TMS",
-  "main": "index.html",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel",
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
@@ -20,7 +23,9 @@
     "jquery": "^3.6.4"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
     "concat": "^1.0.3",
+    "parcel": "^2.8.3",
     "sass": "^1.62.0",
     "server": "^1.0.38"
   }

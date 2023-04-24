@@ -1,0 +1,99 @@
+#section-contact {
+  background-color: $bg-contact-color;
+  padding: 4rem 0;
+  @media (max-width: 767px) {
+    padding: 2rem 0;
+  }
+}
+.container {
+}
+.container-contact {
+}
+.contact-wrap {
+  display: flex;
+  flex-direction: row;
+  margin: 0 -15px;
+  & .contact-title {
+    @include contact-title;
+    margin-bottom: 2rem;
+    @media (max-width: 360px) {
+      margin-bottom: 1rem;
+    }
+  }
+  @media (max-width: 360px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+}
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 15px;
+  & p {
+    @include contact-description;
+  }
+  @media (max-width: 360px) {
+    width: 90%;
+    margin-bottom: 3.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.contact-location {
+}
+.location {
+}
+.contact__description {
+}
+.contact-share {
+}
+.contact-title-share {
+  margin-bottom: 2rem;
+  @media (max-width: 360px) {
+    margin-bottom: 1rem;
+  }
+}
+.contact-share-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  & li {
+    @include link-li;
+    margin: 0 1rem;
+    & a {
+      @include link-a;
+      & i {
+        @include link-i;
+      }
+    }
+  }
+}
+.team-card-social-facebook {
+}
+.facebook {
+}
+.fa-brands {
+}
+.fa-facebook-f {
+}
+.team-card-social-twitter {
+}
+.twitter {
+}
+.fa-twitter {
+}
+.team-card-social-linkedin {
+}
+.linkedin {
+}
+.fa-linkedin {
+}
+.contact-about {
+}
+.about {
+}
+.contact-description {
+}

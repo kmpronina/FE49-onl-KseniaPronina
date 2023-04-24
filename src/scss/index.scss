@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+@import "./_cdn";
+@import "./colors";
+@import "./fonts";
+@import "./mixins";
+@import "./header";
+@import "./advantages.scss";
+@import "./team.scss";
+@import "./download.scss";
+@import "./contact.scss";
+@import "./footer.scss";
+
+html {
+  font-family: "Raleway", sans-serif;
+  @media (max-width: 992px) {
+    font-size: 14px;
+  }
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
+  @media (max-width: 576px) {
+    font-size: 10px;
+  }
+  @media (max-width: 360px) {
+    font-size: 12px;
+  }
+}
+.section {
+  padding: 20px 0;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  @media (max-width: 992px) {
+    width: 750px;
+  }
+  @media (max-width: 767px) {
+    width: 90%;
+  }
+  @media (max-width: 360px) {
+    width: 100%;
+  }
+}

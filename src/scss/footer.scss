@@ -1,0 +1,49 @@
+.section {
+}
+.section-footer {
+  background-color: $bg-footer-color;
+  // padding: 0 0.3125rem;
+}
+.container {
+}
+.container-footer {
+}
+.footer-wrap {
+  width: 40%;
+  margin: auto;
+  @media (max-width: 767px) {
+    width: 50%;
+  }
+  @media (max-width: 576px) {
+    width: 60%;
+  }
+  @media (max-width: 360px) {
+    width: 70%;
+  }
+}
+.footer-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: $footer-grey;
+  @media (max-width: 992px) {
+    font-size: 1rem;
+    line-height: 1.125rem;
+  }
+  @media (max-width: 767px) {
+    font-size: 0.9375rem;
+    line-height: 1rem;
+  }
+  & span {
+    color: $white;
+  }
+}
+.fa-sharp {
+}
+.fa-regular {
+}
+.fa-copyright {
+}

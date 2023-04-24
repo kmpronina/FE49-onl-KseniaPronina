@@ -1,0 +1,100 @@
+.section-advantagens {
+  background-color: $white;
+}
+.container-advantages {
+}
+.advantages-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  justify-content: space-between;
+  @media (max-width: 1200px) {
+    justify-content: space-around;
+  }
+  @media (max-width: 360px) {
+    margin: 0;
+  }
+}
+.advantages-card {
+  max-width: 23.125rem;
+  margin: 0 0.9375rem 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 992px) {
+    max-width: 16rem;
+  }
+  @media (max-width: 360px) {
+    max-width: 80%;
+    margin: 0 0 1rem;
+  }
+}
+.advatages-card__img {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  @media (max-width: 767px) {
+    width: 8rem;
+    height: 8rem;
+  }
+  @media (max-width: 576px) {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+.advantages-card__name {
+  @include bold-text;
+  color: $black;
+  line-height: 8rem;
+  @media (max-width: 992px) {
+    font-size: 1.25rem;
+    line-height: 6rem;
+  }
+  @media (max-width: 360px) {
+    font-size: 1.25rem;
+  }
+}
+.advantages-card__description {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: $text-grey;
+  padding: 0 5px;
+  @media (max-width: 992px) {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+  @media (max-width: 360px) {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+#img-pencil::after {
+  @include icon;
+  content: "\e900";
+}
+#img-tv::after {
+  @include icon;
+  content: "\e901";
+}
+#img-bulb::after {
+  @include icon;
+  content: "\e902";
+}
+#img-star::after {
+  @include icon;
+  content: "\e903";
+}
+#img-check::after {
+  @include icon;
+  content: "\e904";
+}
+#img-basket::after {
+  @include icon;
+  content: "\e905";
+}

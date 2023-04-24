@@ -1,0 +1,142 @@
+.section-team {
+  background-color: $white;
+}
+.container-team {
+  // margin: 0 auto 15px;
+}
+.team-wrap {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+.team-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 20%;
+  margin: 0 15px;
+  @media (max-width: 767px) {
+    min-width: 40%;
+    margin-bottom: 2rem;
+  }
+  @media (max-width: 370px) {
+    max-width: 35%;
+    min-width: 35%;
+  }
+  @media (max-width: 360px) {
+    max-width: 90%;
+    min-width: 90%;
+  }
+}
+.team-card-img {
+  margin-bottom: 2rem;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    @media (max-width: 767px) {
+      width: 15rem;
+      height: 15rem;
+    }
+    @media (max-width: 475px) {
+      width: 10rem;
+      height: 10rem;
+    }
+    @media (max-width: 360px) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.team-card__name {
+  margin-bottom: 0.5rem;
+  & p {
+    @include team-name;
+  }
+}
+.team-card__job {
+  margin-bottom: 1rem;
+  @media (max-width: 360px) {
+    margin-bottom: 2rem;
+  }
+  & p {
+    @include team-job;
+  }
+}
+.team-card__description {
+  flex-grow: 10;
+  margin-bottom: 1rem;
+  @media (max-width: 360px) {
+    margin-bottom: 2rem;
+  }
+  & p {
+    @include team-description;
+    // @media (max-width: 370px) {
+    //   font-size: 0.5rem;
+    // }
+  }
+}
+.team-card-social {
+  display: flex;
+  flex-direction: row;
+  & li {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 5px 0 0;
+    border: 1px solid $link-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 992px) {
+      width: 2rem;
+      height: 2rem;
+    }
+    @media (max-width: 360px) {
+      width: 3rem;
+      height: 3rem;
+      margin: 0 10px 0 0;
+    }
+  }
+  & a {
+    padding: 15px 15px;
+    & i {
+      font-size: 1.75rem;
+      color: $link-grey;
+      @media (max-width: 992px) {
+        font-size: 1.25rem;
+      }
+      @media (max-width: 360px) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+.team-card-social-facebook {
+}
+.facebook {
+}
+.fa-brands {
+}
+.fa-facebook-f {
+}
+.team-card-social-twitter {
+}
+.twitter {
+}
+.fa-twitter {
+}
+.team-card-social-linkedin {
+}
+.linkedin {
+}
+.fa-linkedin {
+}
