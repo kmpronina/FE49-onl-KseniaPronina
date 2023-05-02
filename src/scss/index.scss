@@ -11,7 +11,16 @@
 @import "./mixins";
 @import "./header";
 @import "./advantages.scss";
+@import "./projects.scss";
 @import "./team.scss";
+// @import "../../node_modules/swiper/swiper.css";
+// @import "../../node_modules/swiper/swiper-bundle.css";
+// @import "../../node_modules/swiper/swiper-element.css";
+// @import "../../node_modules/swiper/swiper-element-bundle.css";
+@import "../../node_modules/swiper/swiper-bundle.css";
+// @import "swiper/css/navigation";
+// @import "swiper/css/pagination";
+@import "./slider.scss";
 @import "./download.scss";
 @import "./contact.scss";
 @import "./footer.scss";

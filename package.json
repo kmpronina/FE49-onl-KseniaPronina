@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/kmpronina/fe49-onl-KseniaPronina#readme",
   "dependencies": {
-    "jquery": "^3.6.4"
+    "jquery": "^3.6.4",
+    "swiper": "^9.2.4"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",

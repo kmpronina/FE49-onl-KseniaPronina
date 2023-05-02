@@ -8,13 +8,13 @@
   white-space: nowrap;
   transition: 0.5s;
   @media (max-width: 576px) {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 3rem;
+    line-height: 4.5rem;
   }
   &:hover {
     border: none;
     border-bottom: 3px solid $white;
-    padding-bottom: 2.375rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -56,6 +56,7 @@
   height: 2.5rem;
   margin: 0 5px 0 0;
   border: 1px solid $link-grey;
+  border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,15 +73,34 @@
 
 @mixin link-a {
   padding: 15px 15px;
+  &:hover .fa-facebook-f {
+    color: #3b5998;
+    transition: 0.5s;
+  }
+  &:hover .fa-twitter {
+    color: #00acee;
+    transition: 0.5s;
+  }
+  &:hover .fa-linkedin {
+    color: #0072b1;
+    transition: 0.5s;
+  }
 }
 
 @mixin link-i {
   font-size: 1.75rem;
   color: $link-grey;
+  transition: 0.5s;
   @media (max-width: 992px) {
     font-size: 1.25rem;
   }
   @media (max-width: 360px) {
     font-size: 2rem;
   }
+}
+
+@mixin bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
