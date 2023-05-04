@@ -18,7 +18,7 @@ header::after {
   z-index: 10;
 }
 .container-header {
-  z-index: 1;
+  z-index: 100;
 }
 .header-top-wrap {
   display: flex;
@@ -61,6 +61,7 @@ header::after {
     font-weight: 100;
   }
 }
+
 .header-top-nav {
   width: 60%;
   @media (max-width: 576px) {
@@ -77,14 +78,15 @@ header::after {
     height: 3rem;
     margin-left: auto;
     border: none;
-    background-color: none;
+    background-color: rgba(255, 255, 255, 0);
   }
   .fa-bars {
-    color: $text-grey;
-    font-size: 1.5rem;
+    color: $white;
+    font-size: 2rem;
     vertical-align: middle;
   }
 }
+
 .header-top-nav__list {
   display: flex;
   flex-direction: row;
@@ -93,27 +95,28 @@ header::after {
     width: 100%;
     height: calc(100vh - 40px);
     position: absolute;
-    top: -150%;
+    top: -200%;
     left: 0;
     flex-direction: column;
     background-color: rgba(101, 105, 128, 0.95);
-    padding: 15px 15px;
+    padding: 25px 25px 50px;
     z-index: 200;
     &.active {
       top: 40px;
     }
   }
+}
 
-  .header-top-nav__item {
-    margin: 0 15px;
-    @media (max-width: 767px) {
-      margin: 0 5px;
-    }
+.header-top-nav__item {
+  margin: 0 15px;
 
-    .header-top-nav__link {
-      @include nav-link;
-    }
+  @media (max-width: 767px) {
+    margin: 0 5px;
   }
+}
+
+.header-top-nav__link {
+  @include nav-link;
 }
 
 .header-wrap {
@@ -149,7 +152,7 @@ header::after {
   }
   .header-link {
     @include button-block;
-    .header__link {
+    a {
       @include button;
     }
   }

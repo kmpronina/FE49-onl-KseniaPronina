@@ -44,12 +44,16 @@
     object-fit: cover;
     overflow: hidden;
     @media (max-width: 767px) {
-      width: 15rem;
-      height: 15rem;
+      width: 200px;
+      height: 200px;
+    }
+    @media (max-width: 576px) {
+      width: 150px;
+      height: 150px;
     }
     @media (max-width: 475px) {
-      width: 10rem;
-      height: 10rem;
+      width: 120px;
+      height: 120px;
     }
     @media (max-width: 360px) {
       width: 100%;
@@ -97,24 +101,4 @@
       @include link-i;
     }
   }
-}
-.team-card-social-facebook {
-}
-.facebook {
-}
-.fa-brands {
-}
-.fa-facebook-f {
-}
-.team-card-social-twitter {
-}
-.twitter {
-}
-.fa-twitter {
-}
-.team-card-social-linkedin {
-}
-.linkedin {
-}
-.fa-linkedin {
 }

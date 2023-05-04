@@ -1,10 +1,16 @@
 .section {
 }
 .section-projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  // justify-content: space-around;
   align-items: center;
+  grid-template-columns: repeat(auto-fill, 25%);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 0;
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(auto-fit, 50%);
+    grid-template-rows: repeat(4, 1fr);
+  }
 }
 // .projects-list {
 //   display: flex;
@@ -14,13 +20,11 @@
 //   width: 25%;
 // }
 .project-item__link {
-  width: 25%;
+  // width: 25%;
   padding: 0 2px;
-  @media (max-width: 767px) {
-    width: 50%;
-  }
-  // width: 100%;
-  // height: 100%;
+  // @media (max-width: 767px) {
+  //   width: 50%;
+  // }
 }
 .project-card {
   position: relative;

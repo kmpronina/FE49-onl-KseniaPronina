@@ -7,14 +7,14 @@
   text-transform: uppercase;
   white-space: nowrap;
   transition: 0.5s;
-  @media (max-width: 576px) {
-    font-size: 3rem;
-    line-height: 4.5rem;
-  }
   &:hover {
     border: none;
     border-bottom: 3px solid $white;
     padding-bottom: 2rem;
+  }
+  @media (max-width: 576px) {
+    font-size: 2rem;
+    line-height: 3rem;
   }
 }
 
@@ -36,6 +36,9 @@
   transition: 0.5s;
   &:hover {
     background-color: $red;
+  }
+  &.active {
+    box-shadow: 1px 1px 20px $coral;
   }
 }
 
@@ -60,6 +63,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &:last-child {
+    margin: 0;
+  }
   @media (max-width: 992px) {
     width: 2rem;
     height: 2rem;
@@ -72,7 +78,7 @@
 }
 
 @mixin link-a {
-  padding: 15px 15px;
+  // padding: 15px 15px;
   &:hover .fa-facebook-f {
     color: #3b5998;
     transition: 0.5s;

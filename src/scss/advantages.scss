@@ -24,7 +24,13 @@
   @media (max-width: 992px) {
     max-width: 16rem;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 576px) {
+    max-width: 225px;
+  }
+  @media (max-width: 509px) {
+    max-width: 175px;
+  }
+  @media (max-width: 400px) {
     max-width: 80%;
     margin: 0 0 1rem;
   }
@@ -54,7 +60,7 @@
     font-size: 1.25rem;
     line-height: 6rem;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 400px) {
     font-size: 1.25rem;
   }
 }
@@ -69,7 +75,7 @@
     font-size: 0.875rem;
     line-height: 1rem;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 576px) {
     font-size: 1rem;
     line-height: 1.25rem;
   }
