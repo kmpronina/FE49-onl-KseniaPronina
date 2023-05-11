@@ -1,8 +1,9 @@
 .download {
   border-color: $white;
+  padding: 45px 15px;
 }
 .container-download {
-  padding: 8rem 0;
+  // padding: 45px 15px;
   @media (max-width: 576px) {
     padding: 6rem 0;
   }
@@ -17,11 +18,11 @@
 }
 .download__title {
   width: 80%;
-  margin: auto;
+  margin: 0 auto 25px;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 1.75rem;
-  line-height: 3rem;
+  line-height: 2rem;
   text-transform: capitalize;
   text-align: center;
 }

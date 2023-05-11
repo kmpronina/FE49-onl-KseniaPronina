@@ -16,14 +16,13 @@
   & .contact-title {
     @include contact-title;
     margin-bottom: 2rem;
-    @media (max-width: 360px) {
+    @media (max-width: 450px) {
       margin-bottom: 1rem;
     }
   }
-  @media (max-width: 360px) {
+  @media (max-width: 450px) {
     flex-direction: column;
     align-items: center;
-    margin: 0;
   }
 }
 .contact-item {
@@ -34,7 +33,7 @@
   & p {
     @include contact-description;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 450px) {
     width: 90%;
     margin-bottom: 3.5rem;
     &:last-child {
@@ -52,7 +51,7 @@
 }
 .contact-title-share {
   margin-bottom: 2rem;
-  @media (max-width: 360px) {
+  @media (max-width: 450px) {
     margin-bottom: 1rem;
   }
 }
@@ -70,30 +69,4 @@
       }
     }
   }
-}
-.team-card-social-facebook {
-}
-.facebook {
-}
-.fa-brands {
-}
-.fa-facebook-f {
-}
-.team-card-social-twitter {
-}
-.twitter {
-}
-.fa-twitter {
-}
-.team-card-social-linkedin {
-}
-.linkedin {
-}
-.fa-linkedin {
-}
-.contact-about {
-}
-.about {
-}
-.contact-description {
 }

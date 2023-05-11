@@ -1,3 +1,4 @@
+// for links in navigation
 @mixin nav-link {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -7,10 +8,11 @@
   text-transform: uppercase;
   white-space: nowrap;
   transition: 0.5s;
+  padding: 0 10px;
   &:hover {
     border: none;
     border-bottom: 3px solid $white;
-    padding-bottom: 2rem;
+    padding: 0 15px 2rem;
   }
   @media (max-width: 576px) {
     font-size: 2rem;
@@ -18,12 +20,17 @@
   }
 }
 
+// for all buttons
 @mixin button-block {
-  width: 21.825rem;
-  height: 3.125rem;
-  margin: 0 auto 4rem;
+  width: 350px;
+  margin: auto;
+  // height: 3.125rem;
+  // margin: 0 auto 4rem;
   @media (max-width: 767px) {
-    margin: 0 auto 2rem;
+    width: 300px;
+  }
+  @media (max-width: 400px) {
+    width: 80%;
   }
 }
 
@@ -34,6 +41,7 @@
   background-color: $coral;
   display: block;
   transition: 0.5s;
+  line-height: 35px;
   &:hover {
     background-color: $red;
   }
@@ -42,6 +50,7 @@
   }
 }
 
+// fir icons in advantages
 @mixin icon {
   display: block;
   font-family: "icomoon";
@@ -49,9 +58,9 @@
   font-size: 7rem;
   // line-height: 8rem;
   color: $coral;
-  @media (max-width: 767px) {
-    font-size: 6rem;
-  }
+  // @media (max-width: 767px) {
+  //   font-size: 6rem;
+  // }
 }
 
 @mixin link-li {
@@ -63,9 +72,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &:last-child {
-    margin: 0;
-  }
+  // &:last-child {
+  //   margin: 0;
+  // }
   @media (max-width: 992px) {
     width: 2rem;
     height: 2rem;

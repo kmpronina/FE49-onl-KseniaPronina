@@ -1,6 +1,3 @@
-.section-slider {
-  padding: 25px 0;
-}
 .swiper {
   width: 100%;
   height: 495px;
@@ -81,10 +78,16 @@
 .swiper-button-prev {
   font-size: 2rem;
   color: $white;
+  @media (max-width: 576px) {
+    display: none;
+  }
 }
 .swiper-button-next {
   font-size: 2rem;
   color: $white;
+  @media (max-width: 576px) {
+    display: none;
+  }
 }
 .swiper-pagination-bullet {
   border: 2px solid $plum;
